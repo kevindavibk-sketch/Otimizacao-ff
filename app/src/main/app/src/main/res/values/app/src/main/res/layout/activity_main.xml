@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0F"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="OPTIMIZER" android:textColor="#00E5FF" android:textSize="28sp"
+            android:textStyle="bold" android:layout_marginBottom="2dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Free Fire Performance" android:textColor="#4A4A6A"
+            android:textSize="13sp" android:layout_marginBottom="16dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:background="#0D0D1A"
+            android:padding="12dp" android:layout_marginBottom="16dp">
+            <TextView android:id="@+id/tvShizukuStatus"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="○ Shizuku desconectado"
+                android:textColor="#FF6B6B" android:textSize="12sp"/>
+            <Button android:id="@+id/btnShizuku"
+                android:layout_width="wrap_content" android:layout_height="32dp"
+                android:text="Conectar" android:textColor="#00E5FF" android:textSize="11sp"
+                android:backgroundTint="#1A1A2E"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#12121E"
+            android:padding="16dp" android:layout_marginBottom="10dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="MEMÓRIA RAM" android:textColor="#6C6C8A"
+                android:textSize="11sp" android:layout_marginBottom="10dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <TextView android:id="@+id/tvRamFree"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Livre: — MB"
+                    android:textColor="#00E5FF" android:textSize="15sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/tvRamTotal"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Total: — MB" android:textColor="#4A4A6A" android:textSize="13sp"/>
+            </LinearLayout>
+            <ProgressBar android:id="@+id/pbRam"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent" android:layout_height="6dp"
+                android:max="100" android:progressTint="#00E5FF" android:progressBackgroundTint="#1E1E2E"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#12121E"
+            android:padding="16dp" android:layout_marginBottom="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="CACHE DO APP" android:textColor="#6C6C8A"
+                android:textSize="11sp" android:layout_marginBottom="6dp"/>
+            <TextView android:id="@+id/tvCacheSize"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Cache: calculando..." android:textColor="#B0B0CC" android:textSize="14sp"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnFreeFire"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="MODO FREE FIRE" android:textColor="#0A0A0F"
+            android:textStyle="bold" android:textSize="15sp"
+            android:backgroundTint="#00E5FF" android:layout_marginBottom="10dp"/>
+        <Button android:id="@+id/btnOptimize"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="Otimizar Agora" android:textColor="#00E5FF"
+            android:backgroundTint="#1A1A2E" android:layout_marginBottom="8dp"/>
+        <Button android:id="@+id/btnClearCache"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="Limpar Cache" android:textColor="#B0B0CC"
+            android:backgroundTint="#12121E" android:layout_marginBottom="8dp"/>
+        <Button android:id="@+id/btnAnimations"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="Animações: ON" android:textColor="#B0B0CC"
+            android:backgroundTint="#12121E" android:layout_marginBottom="20dp" android:alpha="0.5"/>
+        <TextView android:id="@+id/tvStatus"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Conecte o Shizuku para começar."
+            android:textColor="#4ADE80" android:textSize="13sp" android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</ScrollView>
